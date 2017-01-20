@@ -1,13 +1,19 @@
-.header{
-    height: 450px;
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+header{
+    max-height: 400px;
     background: url(index_bg.jpg) center center ;
     background-size: cover;
-    margin: -10px;
+    padding-bottom: 50px;
     }
 
 .h1{
     text-align: center;
-    //font-size: 72px;
+    font-size: 72px;
     font-size: 5.5vw;
     font-weight: 700;
     font-family: ubuntu;
@@ -16,14 +22,14 @@
     letter-spacing: 0.05em;
     margin-bottom: 20px;
     clear: both;
-    padding-top: 100px;
+    padding-top: 40px;
     }
     
 .span{
         display: inline-block;
         padding: 0.2em 0.5em;
         border: white solid 10px;
-    }
+}
 
 .tag{
     @extend %small-bold;
@@ -32,7 +38,76 @@
     color: white;
     line-height: 1;
     font-family: ubuntu;
-    }    
+}    
+
+.about-me{
+    @extend %small-bold;
+    font-family: ubuntu;
+    padding: 70px 0 30px;
+    text-align: center;
+    color: black;
+}
+
+.face-image{
+    align-content: center;
+    background-image: url(face-image.JPG);
+    +size(200px);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+
+}
+
+.navbar-inner {
+    background-color:transparent;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    font-family: ubuntu;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+li a {
+    color: black;
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 700px){
+    
+    li {
+
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
