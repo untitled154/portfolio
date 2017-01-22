@@ -29,7 +29,7 @@ header{
 .span{
         display: inline-block;
         padding: 0.2em 0.5em;
-        border: white solid 13px;
+        border: white solid 10px;
 }
 
 .tag{
@@ -74,6 +74,11 @@ header{
     display: block;
 }
 
+@media screen and (max-width: 600px){
+    .h1{
+        font-size:9.5vw;
+    }
+}
 
 
 
