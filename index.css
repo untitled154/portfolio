@@ -43,13 +43,11 @@ header{
 }    
 
 .about-me{
-    @extend %small-bold;
     text-transform: uppercase;
     font-family: ubuntu;
     color: #ce954b;
     padding: 40px 0 30px;
     text-align: center;
-    color: black;
     font-size: 20px;
 }
 
@@ -80,6 +78,10 @@ header{
     max-width: 540px;
     margin: 100px auto;
     color: #999;
+}
+.skill-label{
+    font-family: ubuntu;
+    font-size: 20px;
 }
 
 .skill-unit{
